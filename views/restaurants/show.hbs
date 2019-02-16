@@ -1,4 +1,14 @@
 <h3 id="restaurantName" data-id="{{ restaurant.id}}">{{ restaurant.name}}</h3>
 <p>{{ restaurant.description}}</p>
 <a href="/restaurants/{{restaurant._id}}/edit">Edit this restaurant</a>
+
+<div id="map"></div>
+
 <a href="/restaurants">Go back to the list</a>
+  <script> idRest = '{{restaurant._id}}';</script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBV-R9RTge16U6KdCLwOd-eS36XQJvYYL0">
+  </script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="/javascripts/main.js"></script>
+
+  {{!-- <script> getRestaurant('{{restaurant.id}}');</script> --}}
